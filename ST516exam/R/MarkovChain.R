@@ -77,6 +77,6 @@ MarkovChain <- function(p, k, n){
   print("Stationary prob.")
   colnames(res) <- c("Exact", "Simulated")
   rownames(res) <- 1:N
-  print(as.table(res))
+  return(as.table(res))
   
 }
